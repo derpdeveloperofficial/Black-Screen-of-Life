@@ -1,0 +1,124 @@
+<resources>
+    <!-- injectado pelo gradle string name="app_name">Black Screen of Life</string-->
+
+    <!-- Main Activity -->
+    <string name="buttonWatchAdText">Watch an ad to show some love</string>
+    <string name="buttonWatchAdPremiumText">Premium Version</string>
+    <!--string name="buttonRemoveAdsText">Buy PREMIUM version</string-->
+    <string name="textNoProximitySensor">Unfortunately, your device does not have a proximity sensor or it is not working properly.\n\nYou are not able to use BSoL.\n\n):</string>
+    <string name="textLoadingAd">A BIG THANK YOU\nfor your support!\n\nPlease wait while ad is loading&#8230;</string>
+
+    <string name="textEminentBlocking">Proximity sensor is blocked.\n\nBSoL will turn off the screen briefly&#8230;</string>
+    <string name="textWatchAd">Please watch an ad to support BSoL&#8230;\n\n(you can click the notification that just appeared)</string>
+
+    <string name="dialogFirstEnableTitle">First run</string>
+    <string name="dialogFirstEnableMessage">BSoL is now activated.\n\nIf the proximity sensor becomes blocked, BSoL will turn off the screen of your smartphone.\n\nFor more information, press the information icon on BSoL main screen.\n\nNOTE: If BSoL does not work as expected, go to the settings and enable compatibility mode.</string>
+    <string name="dialogFirstEnableButton">Got it</string>
+
+    <string name="dialogChangelogTitle">BSoL was updated</string>
+    <string name="dialogChangelogMessage">- fixed some bugs;\n\n- improved BSoL so that it does not get killed by the system while it is active;\n\n- improved the start on boot feature;\n\n- updated notification icons for KitKat and lower;\n\n- lowered the error sound volume.</string>
+    <!--string name="dialogChangelogMessage">- dramatically reduced the number of ads users are required to watch;\n\n- added an option to show a notification even when BSoL is disabled (for easier activation);\n\n- added an option to start BSoL when phone boots;\n\n- improved notification icons for devices with Lollipop or higher.</string-->
+    <string name="dialogChangelogButton">Cool</string>
+
+    <string name="dialogAdErrorTitle">Error loading ad</string>
+    <string name="dialogAdErrorMessage">An error occurred while loading the ad.\n\nBut thanks anyway for your support!\n\n\nP.S.:If BSoL was asking you to see an ad in order to continue using it, now it is unlocked.</string>
+    <string name="dialogAdInternetErrorMessage">BSoL could not connect to the internet to load the ad.\n\nBut thanks anyway for your support!\n\nPlease check your internet connection and try again.</string>
+    <string name="dialogAdErrorButton">OK</string>
+
+    <string name="prefFirstEnabledDate">prefFirstEnabledDate</string>
+    <string name="prefAppAlreadyRated">prefAppAlreadyRated</string>
+    <string name="prefRateDialogLastShownDate">prefLastDateRateAppDialog</string>
+    <string name="dialogRateTitle">Please rate BSoL</string>
+    <string name="dialogRateMessage">You have used BSoL for a while now. If you find this app useful, please rate it in Google Play Store.\n\nYour feedback is very important to me! Thanks for your support!</string>
+    <string name="dialogRatePositiveButton">Rate now</string>
+    <string name="dialogRateNeutralButton">Later</string>
+    <string name="dialogRateNegativeButton">Never</string>
+
+    <string name="dialogThanksPremiumMessage">Thank you for having bought the Premium Version!\n\nYou are the best!</string>
+    <string name="dialogThanksPremiumButton">No problem bro</string>
+
+    <!-- Info -->
+    <string name="labelInfoTutorialTitle">HOW TO USE</string>
+    <string name="labelInfoContactTitle">CONTACT</string>
+    <string name="labelInfoContactMessage">Thank you for using Black Screen of Life!\n\nI am very interested in hearing suggestions and comments that will help me to enhance this application.\n\nPlease send me an email: <a href="mailto:derpdeveloper@gmail.com">derpdeveloper@gmail.com</a></string>
+    <string name="labelInfoWhyTitle">WHY I MADE THIS APP</string>
+    <string name="labelInfoTipsTitle">TIPS</string>
+    <string name="labelInfoTipsBody"><b>#1</b> - Use BSoL to turn off the screen while you are listening to music videos and <b>save about 60% of your precious battery</b>!\n\n<b>#2</b> - Put your smartphone in your pocket or turn it face down on the table to comfortably turn the screen off with BSoL.\n\n<b>#3</b> - If BSoL is not working as expected, try enabling <b>Compatibility Mode</b> in settings.</string>
+
+    <!-- Preferences and Intent Keys -->
+    <!--string name="prefOnlyActiveIfMusicPlaying">prefOnlyActiveIfMusicPlaying</string-->
+    <string name="prefIsFirstRun">prefIsFirstRun</string>
+    <string name="prefLatestChangelogShown">prefLatestChangelogShown</string>
+    <string name="prefIsFirstEnabled">prefIsFirstEnabled</string>
+    <string name="prefLastSeenAdMillis">prefLastSeenAd</string>
+    <string name="prefActiveTimeSinceLastAd">prefActiveTimeSinceLastAd</string>
+    <string name="prefUserAlreadyWarnedToWatchAd">prefUserAlreadyWarnedToWatchAd</string>
+    <string name="intentWatchAd">intentWatchAd</string>
+    <string name="intentStopBSoL">intentStopBSoL</string>
+
+    <!-- Settings -->
+    <string name="prefCategoryActivation">Activation</string>
+    <string name="prefCategoryNotification">Notification</string>
+    <string name="prefCategoryOther">Other Configurations</string>
+    <string name="prefCategoryCompatibility">Compatibility</string>
+    <string name="prefCategoryPremium">Premium version</string>
+    <string name="prefCategoryPremiumKey">prefCategoryPremiumKey</string>
+
+    <string name="prefNoAdsKey">prefNoAdsKey</string>
+    <string name="prefNoAdsTitle">Never watch ads again!</string>
+
+    <string name="prefBuyPremiumKey">prefBuyPremiumKey</string>
+    <string name="prefBuyPremiumTitle">Buy BSoL Premium</string>
+    <string name="prefBuyPremiumSummary">support the developer and never watch ads again!</string>
+    <string name="prefBuyPremiumTitleAfterBuying">You have the premium version</string>
+    <string name="prefBuyPremiumSummaryAfterBuying">and you will never need to watch ads again ;)</string>
+
+    <string name="prefShowOverlayKey">prefShowOverlayKey</string>
+    <string name="prefShowOverlayTitle">Show timer</string>
+    <string name="prefShowOverlaySummary">before turning off the screen</string>
+
+    <string name="prefPlayLockSoundKey">prefPlayLockSoundKey</string>
+    <string name="prefPlayLockSoundTitle">Play lock sound</string>
+    <string name="prefPlayLockSoundSummary">when the screen is turned off</string>
+
+    <string name="prefLockVibrationKey">prefLockVibrationKey</string>
+    <string name="prefLockVibrationTitle">Vibrate</string>
+    <string name="prefLockVibrationSummary">when the screen is turned off</string>
+
+    <string name="prefShowRunningNotificationKey">prefShowRunningNotificationKey</string>
+    <string name="prefShowRunningNotificationTitle">Show when enabled</string>
+    <string name="prefShowRunningNotificationSummary"></string>
+
+    <string name="prefShowStoppedNotificationKey">prefShowStoppedNotificationKey</string>
+    <string name="prefShowStoppedNotificationTitle">Show when disabled</string>
+    <string name="prefShowStoppedNotificationSummary">for easier activation</string>
+
+    <string name="prefDelayScreenOffKey">prefDelayScreenOffKey</string>
+    <string name="prefDelayScreenOffTitle">2 second delay</string>
+    <string name="prefDelayScreenOffSummary">delays turning off the screen by 2 seconds after BSoL detects the proximity sensor is blocked</string>
+
+    <string name="prefStartOnBootKey">prefStartOnBootKey</string>
+    <string name="prefStartOnBootTitle">Automatically start BSoL</string>
+    <string name="prefStartOnBootSummary">when phone boots</string>
+
+    <string name="prefCompatibilityBlackOverlayKey">prefCompatibilityBlackOverlayKey</string>
+    <string name="prefCompatibilityBlackOverlayTitle">Compatibility Mode</string>
+    <string name="prefCompatibilityBlackOverlaySummary">Check this option ONLY if BSoL is not working as expected. Otherwise, leave it unchecked.</string> <!--Instead of turning the screen off, BSoL will show a completely black screen, allowing to save battery on AMOLED displays and avoiding accidental screen touches.</string-->
+
+    <!-- Notification -->
+    <string name="notificationAdTitle">Watch an ad</string>
+    <string name="notificationAdText">Please watch an ad to support BSoL</string>
+    <string name="notificationRunningTitle">BSoL is enabled</string>
+    <string name="notificationRunningText">Click here to stop BSoL</string>
+    <string name="notificationRunningTicker">BSoL is enabled</string>
+    <string name="notificationStoppedTitle">BSoL is disabled</string>
+    <string name="notificationStoppedText">Click here to start BSoL</string>
+    <string name="notificationStoppedTicker">BSoL is disabled</string>
+
+    <!-- Ads -->
+    <string name="adsTestId">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="adsMainInterstitialId">ca-app-pub-7548173423247072/4025796543</string>
+    <string name="inTheEnd">b/p9XMd3WGjF7JYzfcAwxQIDAQAB</string>
+    <!-- PR --> <string name="randomChars">koweojnf82ntu2i7f2jfniinfa83kajf3</string>
+
+</resources>

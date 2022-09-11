@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.derpdeveloper.blackscreenoflife"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 21 // *** nao esquecer de fazer update na string do changelog ***
+        versionName "1.15" // *** nao esquecer de fazer update na string do changelog ***
+    }
+    buildTypes {
+        debug {
+            resValue "string", "app_name", "BSoL Test"
+            resValue "string", "gradleIsReleaseVersion", "false"
+            applicationIdSuffix '.test'
+            versionNameSuffix '-TEST'
+        }
+        release {
+            resValue "string", "app_name", "Black Screen of Life"
+            resValue "string", "gradleIsReleaseVersion", "true"
+
+            minifyEnabled true
+            shrinkResources true
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.google.android.gms:play-services-ads:8.3.0'
+    compile 'uk.co.chrisjenx:calligraphy:2.1.0'
+}

@@ -1,0 +1,119 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewTitle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/title"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imageViewInfo"
+            android:layout_below="@+id/imageViewTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_info"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imageViewSettings"
+            android:layout_below="@+id/imageViewTitle"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_settings"
+            android:scaleType="fitXY"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewStatusRainbow"
+            android:layout_below="@+id/imageViewSettings"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/buttonWatchAd"
+            android:src="@drawable/ic_status_rainbow_2"
+            android:scaleType="centerInside"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewStatus"
+            android:layout_below="@+id/imageViewSettings"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/buttonWatchAd"
+            android:src="@drawable/ic_status_disabled"
+            android:scaleType="centerInside"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonWatchAdText"
+            android:id="@+id/buttonWatchAd"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/dark_grey" />
+            <!-- android:layout_above="@+id/buttonBuyRemoveAds"-->
+
+        <!--Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonRemoveAdsText"
+            android:id="@+id/buttonBuyRemoveAds"
+            android:layout_alignLeft="@id/buttonWatchAd"
+            android:layout_alignRight="@id/buttonWatchAd"
+            android:layout_alignParentBottom="true" /-->
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutLoadingAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/textLoadingAd"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

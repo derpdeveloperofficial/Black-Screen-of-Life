@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.derpdeveloper.blackscreenoflife" >
+
+    <uses-feature android:name="android.hardware.sensor.proximity" android:required="true" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.VIBRATE" android:required="false" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" android:required="false" />
+    <!-- Include required permissions for Google Mobile Ads to run-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name="com.derpdeveloper.blackscreenoflife.BSoLApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!--This meta-data tag is required to use Google Play Services.-->
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.derpdeveloper.blackscreenoflife.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.derpdeveloper.blackscreenoflife.SettingsActivity"
+            android:parentActivityName="com.derpdeveloper.blackscreenoflife.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.derpdeveloper.blackscreenoflife.SettingsActivity" />
+        </activity>
+
+        <activity
+            android:name="com.derpdeveloper.blackscreenoflife.InfoActivity"
+            android:parentActivityName="com.derpdeveloper.blackscreenoflife.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.derpdeveloper.blackscreenoflife.InfoActivity" />
+        </activity>
+
+        <service android:name="com.derpdeveloper.blackscreenoflife.ScreenOffService" />
+
+        <receiver android:name="com.derpdeveloper.blackscreenoflife.AutoStartBoot">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

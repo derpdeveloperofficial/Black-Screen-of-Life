@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title=""
+        android:icon="@null" />
+
+    <PreferenceCategory
+        android:key="@string/prefCategoryPremiumKey"
+        android:title="@string/prefCategoryPremium"
+        >
+
+        <!--PreferenceScreen
+            android:key="@string/prefNoAdsKey"
+            android:title="@string/prefNoAdsTitle"
+            android:enabled="false" /-->
+
+        <PreferenceScreen
+            android:key="@string/prefBuyPremiumKey"
+            android:title="@string/prefBuyPremiumTitle"
+            android:summary="@string/prefBuyPremiumSummary"
+            android:persistent="false"/>
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title=""
+        android:icon="@null" />
+
+    <PreferenceCategory
+        android:title="@string/prefCategoryCompatibility">
+
+        <CheckBoxPreference
+            android:key="@string/prefCompatibilityBlackOverlayKey"
+            android:title="@string/prefCompatibilityBlackOverlayTitle"
+            android:summary="@string/prefCompatibilityBlackOverlaySummary"
+            android:defaultValue="false"
+            android:widgetLayout="@layout/checkbox_custom" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title=""
+        android:icon="@null" />
+
+
+    <PreferenceCategory
+        android:title="@string/prefCategoryActivation">
+
+        <CheckBoxPreference
+            android:key="@string/prefShowOverlayKey"
+            android:title="@string/prefShowOverlayTitle"
+            android:summary="@string/prefShowOverlaySummary"
+            android:defaultValue="true"
+            android:widgetLayout="@layout/checkbox_custom" />
+
+        <CheckBoxPreference
+            android:key="@string/prefPlayLockSoundKey"
+            android:title="@string/prefPlayLockSoundTitle"
+            android:summary="@string/prefPlayLockSoundSummary"
+            android:defaultValue="false"
+            android:widgetLayout="@layout/checkbox_custom" />
+
+        <CheckBoxPreference
+            android:key="@string/prefLockVibrationKey"
+            android:title="@string/prefLockVibrationTitle"
+            android:summary="@string/prefLockVibrationSummary"
+            android:defaultValue="true"
+            android:widgetLayout="@layout/checkbox_custom" />
+
+        <CheckBoxPreference
+            android:key="@string/prefDelayScreenOffKey"
+            android:title="@string/prefDelayScreenOffTitle"
+            android:summary="@string/prefDelayScreenOffSummary"
+            android:defaultValue="false"
+            android:widgetLayout="@layout/checkbox_custom" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title=""
+        android:icon="@null" />
+
+    <PreferenceCategory
+        android:title="@string/prefCategoryNotification">
+
+        <CheckBoxPreference
+            android:key="@string/prefShowRunningNotificationKey"
+            android:title="@string/prefShowRunningNotificationTitle"
+            android:summary="@string/prefShowRunningNotificationSummary"
+            android:defaultValue="true"
+            android:widgetLayout="@layout/checkbox_custom" />
+
+        <CheckBoxPreference
+            android:key="@string/prefShowStoppedNotificationKey"
+            android:title="@string/prefShowStoppedNotificationTitle"
+            android:summary="@string/prefShowStoppedNotificationSummary"
+            android:defaultValue="false"
+            android:widgetLayout="@layout/checkbox_custom" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title=""
+        android:icon="@null" />
+
+
+    <PreferenceCategory
+        android:title="@string/prefCategoryOther">
+
+        <CheckBoxPreference
+            android:key="@string/prefStartOnBootKey"
+            android:title="@string/prefStartOnBootTitle"
+            android:summary="@string/prefStartOnBootSummary"
+            android:defaultValue="false"
+            android:widgetLayout="@layout/checkbox_custom" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title=""
+        android:icon="@null" />
+
+</PreferenceScreen>
