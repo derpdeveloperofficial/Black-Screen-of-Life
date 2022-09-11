@@ -12,6 +12,8 @@ The code is certainly out of date, as I developed this back in 2016 and never re
 
 If you just want to use BSoL, the easiest way is to download and install the APK file from the [releases section](https://github.com/derpdeveloperofficial/Black-Screen-of-Life/releases).
 
+Feel free to contact me directly at: derpdeveloper@gmail.com
+
 It has been a pleasure.
 
 Cheers,
